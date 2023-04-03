@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+  outline: 1 solid red;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  top: 0;
+  padding: 0;
+}
+
+.head {
+  top: 0;
+  margin: 0;
+  background-color: #252b42;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  color: #fff;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.head h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  justify-content: space-evenly;
+}
+
+.nav-links {
+  display: none;
+}
+
+.welcome {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+  background-image: linear-gradient(to top, #00000097, #0000005c, #00000066),
+    url("/Assets/Images/mobilebg.png");
+  background-position: top;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.welcome-h1 {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.welcome-h4 {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.welcome-buttons {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.welcome-button1 {
+  padding: 10px 36px;
+  border-radius: 25px;
+  width: fit-content;
+  background-color: #ffa62b;
+  color: #fff;
+  border: none;
+}
+
+.welcome-button2 {
+  padding: 10px 36px;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  background-color: transparent;
+  text-align: center;
+  width: fit-content;
+  border: 1px solid #fff;
+}
+
+.card-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.fa-users {
+  font-size: 40px;
+  color: #00a0c1;
+}
+
+.card-item1 {
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  background-color: #fff;
+  gap: 15px;
+  height: fit-content;
+  padding: 0 15px;
+  width: 75%;
+  height: fit-content;
+  margin: auto;
+}
+
+.card-item1-text {
+  text-align: left;
+}
+
+.card-item1-text h3 {
+  color: #252b42;
+  font-size: 24px;
+  font-weight: 700;
+  font-family: "Montserrat";
+  margin-bottom: 2px;
+}
+
+.card-item1-text h6 {
+  margin-top: 2px;
+  color: #737373;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Montserrat";
+}
