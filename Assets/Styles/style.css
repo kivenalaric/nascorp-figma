@@ -1,7 +1,7 @@
 * {
   box-sizing: border-box;
   font-family: Montserrat, sans-serif;
-  outline: 1 solid red;
+  /* outline: 1 solid red; */
   font-style: normal;
   letter-spacing: 0.2px;
 }
@@ -10,6 +10,15 @@ body {
   margin: 0;
   top: 0;
   padding: 0;
+  overflow-x: hidden;
+}
+
+header {
+  background-image: linear-gradient(to top, #00000097, #0000005c, #00000066),
+    url("/Assets/Images/mobilebg.png");
+  background-position: top;
+  background-size: cover;
+  width: 100vw;
 }
 
 .head {
@@ -21,7 +30,7 @@ body {
   margin: auto;
   color: #fff;
   justify-content: space-evenly;
-  width: 100vw;
+  width: 100%;
 }
 
 .head h1 {
@@ -32,8 +41,9 @@ body {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 15px;
-  justify-content: space-evenly;
+  gap: 10px;
+  width: fit-content;
+  justify-content: center;
 }
 
 .nav-links {
@@ -44,10 +54,6 @@ body {
   display: flex;
   flex-direction: column;
   padding: 5%;
-  background-image: linear-gradient(to top, #00000097, #0000005c, #00000066),
-    url("/Assets/Images/mobilebg.png");
-  background-position: top;
-  background-size: cover;
   justify-content: center;
   align-items: center;
   color: #fff;
@@ -55,13 +61,11 @@ body {
 }
 
 .welcome-h1 {
-  font-family: "Montserrat";
   font-weight: 700;
   font-size: 40px;
 }
 
 .welcome-h4 {
-  font-family: "Montserrat";
   font-weight: 500;
   font-size: 20px;
 }
@@ -128,7 +132,6 @@ body {
   color: #252b42;
   font-size: 24px;
   font-weight: 700;
-  font-family: "Montserrat";
   margin-bottom: 2px;
 }
 
@@ -137,7 +140,6 @@ body {
   color: #737373;
   font-size: 14px;
   font-weight: 600;
-  font-family: "Montserrat";
 }
 
 main {
@@ -249,8 +251,7 @@ main {
   color: #fff;
 }
 
-.about-intro h2 {
-  font-family: "Montserrat";
+.about-intro .h2f {
   font-size: 40px;
   font-weight: 700;
   line-height: 57px;
@@ -258,8 +259,11 @@ main {
   text-align: center;
 }
 
+.about-intro .h2l {
+  visibility: hidden;
+}
+
 .about-intro p {
-  font-family: "Montserrat";
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -301,7 +305,6 @@ main {
 }
 
 .abt-end-first h2 {
-  font-family: Montserrat;
   font-size: 40px;
   font-weight: 700;
   line-height: 57px;
@@ -310,7 +313,6 @@ main {
 }
 
 .abt-end-first p {
-  font-family: Montserrat;
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
@@ -334,4 +336,372 @@ main {
 
 .abt-last-text {
   color: #fff;
+}
+
+.client-sec {
+  background-color: #16697a;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  height: fit-content;
+  justify-content: space-evenly;
+  padding: 20% 1%;
+}
+
+.client-head-sec {
+  width: 85%;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+
+.client-head-sec h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.client-head-sec p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: center;
+}
+
+.client-box-sec {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+
+.client-box {
+  background-color: #fff;
+  width: 80%;
+  margin: auto auto auto 50px;
+  display: flex;
+  gap: 5px;
+  padding: 30px 10px;
+}
+
+.client-box img {
+  left: 0;
+  margin-left: -45px;
+  justify-self: flex-start;
+  width: 96px;
+  height: 96px;
+  z-index: 1;
+}
+
+.client-box-text {
+  display: flex;
+  flex-direction: column;
+  color: #737373;
+}
+
+.ctext-head {
+  text-align: left;
+}
+
+.ctext-head h3 {
+  color: #252b42;
+  margin-bottom: 2px;
+
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+
+.ctext-head h6 {
+  color: #737373;
+  margin-top: 2px;
+
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.client-box-text p {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+.fa-star {
+  color: #ffa62b;
+}
+
+.fa-star-o {
+  color: #ffa62b;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  padding: 70px 20px;
+  align-items: center;
+  background-color: #252b42;
+  gap: 50px;
+  justify-content: center;
+}
+
+.team-head {
+  width: 90%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.team-head h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+
+.team-head p {
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.team-box-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.team-box {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  justify-content: center;
+  margin: auto;
+  padding: 20px 10px;
+}
+
+.team-box-user {
+  align-self: center;
+}
+
+.team-box-user h6 {
+  color: #ffa62b;
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+  margin: 2px auto;
+}
+
+.team-box-abt {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+}
+
+.team-box-abt h5 {
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  margin: 2px auto;
+}
+
+.team-box-abt p {
+  margin-top: 2px;
+  color: #737373;
+}
+
+.contact {
+  background-color: #252b42;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-intro {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-intro h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+.contact-world {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-world {
+  width: 80%;
+  margin: auto;
+}
+
+.contact-world img {
+  width: 100%;
+}
+
+.contact-form {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form .mobilestud {
+  width: 100vw;
+  align-self: center;
+}
+
+.desktopstud {
+  display: none;
+}
+
+form {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  color: #252b42;
+  gap: 15px;
+}
+
+form h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  text-align: left;
+}
+
+form input {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #737373;
+
+  font-size: 16px;
+  padding: 15px 30px;
+  background-color: #f9f9f9;
+}
+
+form select {
+  border: 1px solid #bdbdbd;
+  border-radius: 5px;
+  font-weight: 700;
+  color: #737373;
+
+  font-size: 16px;
+  padding: 15px 30px;
+  background-color: #f9f9f9;
+}
+
+form button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 40px;
+  gap: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background-color: #ffa62b;
+}
+
+.footer-start {
+  background-color: #252b42;
+  width: 100%;
+}
+
+.footer-start-links {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 40px;
+  margin: auto;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  color: #fff;
+  gap: 10px;
+  width: 80%;
+  margin: auto;
+}
+
+.social-icons {
+  display: flex;
+}
+
+.footer-links h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 0.2px;
+}
+
+.footer-end {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 10px;
+  background-color: #384163;
+}
+
+.footer-end h6 {
+  color: #fff;
+  font-size: 14px;
+  margin: auto;
+  width: 73%;
+  text-align: center;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0.2px;
 }
