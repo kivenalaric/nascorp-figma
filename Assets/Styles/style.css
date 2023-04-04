@@ -705,3 +705,238 @@ form button {
   line-height: 24px;
   letter-spacing: 0.2px;
 }
+
+@media only screen and (min-width: 768px) {
+  header {
+    background-image: linear-gradient(to top, #00000097, #0000005c, #00000066),
+      url("/Assets/Images/desktophero.png");
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+  }
+
+  .head {
+    background-color: transparent;
+  }
+
+  .header-right {
+    color: #fff;
+    display: flex;
+    gap: 20px;
+  }
+
+  .header-right i {
+    color: #fff;
+  }
+
+  .fa-bars {
+    visibility: hidden;
+    display: none;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-links a {
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .welcome-h1 {
+    font-size: 58px;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 0.2px;
+    text-align: center;
+    width: 60%;
+    margin: auto;
+  }
+
+  .welcom-h4 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    width: 60%;
+  }
+
+  .welcome-buttons {
+    flex-direction: row;
+  }
+
+  .card-boxes {
+    flex-direction: row;
+    gap: 0;
+    z-index: 1;
+    margin-bottom: -9%;
+  }
+
+  .card-item1 {
+    height: 100px;
+    border-radius: 0%;
+  }
+
+  .feature-sec-1 {
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0;
+  }
+
+  .feature-container {
+    width: 15%;
+    height: 300px;
+  }
+
+  .sfeature-container {
+    width: 15%;
+    height: 300px;
+  }
+
+  .about {
+    padding: 100px;
+  }
+
+  .about-intro {
+    width: 50%;
+    margin: auto;
+  }
+
+  .h2f {
+    visibility: hidden;
+  }
+
+  .about-intro .h2l {
+    font-size: 40px;
+    color: #fff;
+    visibility: visible;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: 0.2px;
+    text-align: center;
+  }
+
+  .about-l {
+    display: flex;
+    gap: 20px;
+  }
+
+  .about-mid {
+    background-repeat: no-repeat;
+    width: 50%;
+    background-size: cover;
+    height: 500px;
+  }
+
+  .about-end {
+    width: 45%;
+    margin: auto;
+    align-items: flex-start;
+  }
+
+  .abt-end-first {
+    width: 80%;
+  }
+
+  .client-box-sec {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .client {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .client-box {
+    width: 25%;
+    margin: auto;
+  }
+
+  .team-box-sec {
+    flex-direction: row;
+  }
+
+  .team-box {
+    height: 300px;
+  }
+
+  .team-head p {
+    width: 45%;
+    margin: auto;
+  }
+
+  .contact-first {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+  }
+
+  .contact-intro {
+    width: 50%;
+    margin: auto;
+  }
+
+  .contact-intro h2 {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contact-intro p {
+    width: 80%;
+    margin: auto;
+  }
+
+  .contact-world {
+    width: 50%;
+  }
+
+  .contact-world img {
+    width: 60%;
+    margin: auto;
+  }
+
+  .contact-form {
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin: auto;
+    padding: 5%;
+  }
+
+  .mobilestud {
+    display: none;
+  }
+
+  .desktopstud {
+    display: block;
+  }
+
+  .contact-form form {
+    width: 70%;
+  }
+
+  footer {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+
+  .footer-start-links {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: auto;
+    width: 90%;
+  }
+
+  .footer-links {
+    margin: auto;
+  }
+}
