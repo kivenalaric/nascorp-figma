@@ -8,7 +8,7 @@ this is a project final project for html module
 
 ## App
 
-![Home](assets/images/nasscorp.jpeg)
+![Home](assets/images/nascorpfigma.jpg)
 
 ### Built With
 
